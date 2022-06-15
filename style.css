@@ -27,3 +27,66 @@ body {
   background-repeat: no-repeat;
   block-size: cover;
 }
+
+p,
+a,
+button {
+  font-family: "Lato", sans-serif;
+  color: var(--light);
+  text-decoration: none;
+}
+
+a,
+button,
+.logo {
+  cursor: pointer;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) minmax(
+      60px,
+      1fr
+    );
+}
+
+header {
+  grid-column: 2 / span 6;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 120px;
+}
+
+.links {
+  margin-left: auto;
+}
+
+.links a,
+.links button {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  transition: var(--transition);
+}
+
+.links a {
+  margin-right: 50px;
+}
+
+.links a:hover {
+  color: var(--accent);
+}
+
+.button__med {
+  border: none;
+  background-color: var(--accent);
+  padding: 8px 25px;
+  transition: var(--transition);
+}
+
+.button__med:hover {
+  background-color: var(--accentHover);
+}
